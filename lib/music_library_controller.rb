@@ -108,7 +108,7 @@ class MusicLibraryController
     song_input = gets.strip
       @@song_list.each do |song|
         if song[0] == song_input
-          puts "Playing #{song[]} by #{song[]}"
+          puts "Playing #{song[1]} by #{song[2]}"
         end
         # if song[0] == song_input
         #
