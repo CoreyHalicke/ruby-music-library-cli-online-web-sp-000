@@ -121,11 +121,7 @@ class MusicLibraryController
       if song[0] == song_input
         puts "Playing #{song[1]} by #{song[2]}"
       end
-      # if song[0] == song_input
-      #
-      # end
     end
-    # song_choice = @@song_list.find {|s| s[0] == song_input}
   end
 
 end
