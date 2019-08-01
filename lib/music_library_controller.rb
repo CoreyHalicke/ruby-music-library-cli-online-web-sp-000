@@ -116,7 +116,7 @@ class MusicLibraryController
       @@counter += 1
     end
     @@counter = 1
-    
+
     @@song_list.each do |song|
       if song[0] == song_input
         puts "Playing #{song[1]} by #{song[2]}"
