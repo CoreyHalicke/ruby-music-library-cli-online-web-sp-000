@@ -105,18 +105,16 @@ class MusicLibraryController
 
   def play_song
     puts "Which song number would you like to play?"
-    song_input = gets.strip.to_i
-    if song_input.is_a? Integer
-      if song_input.between?(1,@@song_list.count)
-        @@song_list.each do |song|
-          binding.pry
-          # if song[0] == song_input
-          #
-          # end
+    song_input = gets.strip
+      @@song_list.each do |song|
+        if song[0] == song_input
         end
+        binding.pry
+        # if song[0] == song_input
+        #
+        # end
       end
       # song_choice = @@song_list.find {|s| s[0] == song_input}
-    end
   end
 
 end
