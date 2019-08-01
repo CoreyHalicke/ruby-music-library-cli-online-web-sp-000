@@ -29,18 +29,17 @@ class MusicLibraryController
       user_request = gets.strip
       if user_request == "list songs"
         self.list_songs
-      elsif user_request ==
-        self.
-      elsif user_request ==
-        self.
-      elsif user_request ==
-        self.
-      elsif user_request ==
-        self.
-      elsif user_request ==
-        self.
-      elsif user_request ==
-        self.
+      elsif user_request == "list artists"
+        self.list_artists
+      elsif user_request == "list genres"
+        self.list_genres
+      elsif user_request == "list artist"
+        self.list_songs_by_artist
+      elsif user_request == "list genre"
+        self.list_songs_by_genre
+      elsif user_request == "play song"
+        self.play_song
+      elsif user_request == "exit"
       end
     end
   end
