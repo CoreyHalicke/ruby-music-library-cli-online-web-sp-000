@@ -38,7 +38,7 @@ class MusicLibraryController
       song_name = song.name
       artist_name = song.artist.name
       genre_name = song.genre.name
-      @@song_list << "#{@@counter},#{song_name},#{genre_name}".split(",")
+      @@song_list << "#{@@counter},#{song_name},#{artist_name},#{genre_name}".split(",")
       puts "#{@@counter}. #{artist_name} - #{song_name} - #{genre_name}"
       @@counter += 1
     end
@@ -108,7 +108,7 @@ class MusicLibraryController
     song_input = gets.strip
       @@song_list.each do |song|
         if song[0] == song_input
-          
+          puts "Playing #{song[]} by #{song[]}"
         end
         # if song[0] == song_input
         #
