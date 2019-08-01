@@ -106,6 +106,9 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     song_input = gets.strip
+    Song.all.each do |song|
+
+    end
       @@song_list.each do |song|
         if song[0] == song_input
           puts "Playing #{song[]} by #{song[]}"
