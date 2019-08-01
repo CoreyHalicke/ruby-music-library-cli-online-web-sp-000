@@ -38,7 +38,7 @@ class MusicLibraryController
       song_name = song.name
       artist_name = song.artist.name
       genre_name = song.genre.name
-      # @@song_list << "#{@@counter},#{song_name},#{genre_name}".split(",")
+      @@song_list << "#{@@counter},#{song_name},#{genre_name}".split(",")
       puts "#{@@counter}. #{artist_name} - #{song_name} - #{genre_name}"
       @@counter += 1
     end
@@ -106,6 +106,7 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     song_input = gets.strip
+    binding.pry
       # song_choice = @@song_list.find {|s| s[0] == song_input}
   end
 
