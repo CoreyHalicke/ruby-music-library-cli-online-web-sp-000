@@ -106,6 +106,7 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     song_input = gets.strip
+    binding.pry
     Song.all.each do |song|
       binding.pry
     end
