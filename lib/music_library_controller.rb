@@ -108,7 +108,7 @@ class MusicLibraryController
     song_input = gets.strip
       @@song_list.each do |song|
         if song[0] == song_input
-          binding.pry
+          
         end
         # if song[0] == song_input
         #
