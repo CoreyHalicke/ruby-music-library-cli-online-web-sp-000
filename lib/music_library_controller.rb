@@ -106,9 +106,20 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     song_input = gets.strip
-    binding.pry
-    Song.all.each do |song|
-      binding.pry
+    @@song_list = []
+    list_songs = Song.all.sort_by {|n| n.name}
+    list_songs.each do |song|
+      song_name = song.name
+      artist_name = song.artist.name
+      genre_name = song.genre.name
+      @@song_list << "#{@@counter},#{song_name},#{artist_name},#{genre_name}".split(",")
+      puts "#{@@counter}. #{artist_name} - #{song_name} - #{genre_name}"
+      @@counter += 1
+    end
+      @@counter = 1
+
+    
+      
     end
       @@song_list.each do |song|
         if song[0] == song_input
