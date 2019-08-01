@@ -118,8 +118,8 @@ class MusicLibraryController
     end
       @@counter = 1
 
-    
-      
+
+
     end
       @@song_list.each do |song|
         if song[0] == song_input
