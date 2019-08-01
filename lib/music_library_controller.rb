@@ -113,7 +113,6 @@ class MusicLibraryController
       artist_name = song.artist.name
       genre_name = song.genre.name
       @@song_list << "#{@@counter},#{song_name},#{artist_name},#{genre_name}".split(",")
-      puts "#{@@counter}. #{artist_name} - #{song_name} - #{genre_name}"
       @@counter += 1
     end
       @@counter = 1
