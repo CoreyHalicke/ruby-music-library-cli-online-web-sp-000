@@ -111,6 +111,7 @@ class MusicLibraryController
       # song_choice = @@song_list.find {|s| s[0] == song_input}
       @@song_list.each do |song|
       end
+    end
   end
 
 end
