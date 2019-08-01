@@ -27,6 +27,21 @@ class MusicLibraryController
     user_request = ""
     until user_request == "exit" do
       user_request = gets.strip
+      if user_request == "list songs"
+        self.list_songs
+      elsif user_request == 
+        self.
+      elsif user_request == 
+        self.
+      elsif user_request == 
+        self.
+      elsif user_request == 
+        self.
+      elsif user_request == 
+        self.
+      elsif user_request == 
+        self.
+      end
     end
   end
 
