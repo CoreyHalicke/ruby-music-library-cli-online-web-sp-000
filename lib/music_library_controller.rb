@@ -108,11 +108,13 @@ class MusicLibraryController
     song_input = gets.strip.to_i
     if song_input.is_a? Integer
       if song_input.between?(1,@@song_list.count)
-        binding.pry
+        @@song_list.each do |song|
+          if 
+          end
+          binding.pry
+        end
       end
       # song_choice = @@song_list.find {|s| s[0] == song_input}
-      # @@song_list.each do |song|
-      # end
     end
   end
 
